@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="container-fluid d-flex justify-content-center" name="inicio"
-    style="background-color: rgb(36, 114, 98);">
+    style="background-color: #3ea135;">
     <p class="mb-2 p-2 fs-1 " style="color: rgb(255, 255, 255);">Bienvenidos a Rizomasys</p>
     </header>
 
@@ -30,25 +30,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Iniciar sesion</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="ninguno " id="menu_desplegable" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             sedes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href=nop">Bogotá</a></li>
-                            <li><a class="dropdown-item" href="nop">Montería</a></li>
-                            <li><a class="dropdown-item" href="nop">Barranquilla</a></li>
+                            <li><a class="dropdown-item" href="#direccion_bogota">Bogotá</a></li>
+                            <li><a class="dropdown-item" href="#direccion_monteria">Montería</a></li>
+                            <li><a class="dropdown-item" href="#direccion_barranquilla">Barranquilla</a></li>
                         </ul>
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="no tengo link">Horarios</a>
+                        <a class="nav-link" href="#horarios">Horarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="no tengo link">Contáctenos</a>
-                    </li>
+                      <a class="nav-link" href="#telefonos">Contáctenos</a>
+                  </li>
+                  
                 </ul>
     
                
@@ -60,7 +61,7 @@
         </div>
     </nav>
     <!-- Fin de la barra de navegación -->
-
+        <center>
      <!-- Carousel de imagenes -->
      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -68,10 +69,11 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
+          <!--primera imagen papa-->
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="imagenes/papa1.avif" class="d-block w-100" alt="..."> 
+            <img src="imagenes/papa1.avif" class="d-block w-auto" style="height: 600px; max-width: 100%;" alt="...">
+
             <div class="carousel-caption d-none d-md-block">
               <h5>Toda clase de variedad de papa</h5>
               <p>La mejor papa de Colombia.</p>
@@ -79,20 +81,22 @@
           </div>
           <!--segunda imagen papa-->
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="imagenes/papa2.avif" class="d-block w-100" alt="...">
+            <img src="imagenes/papa2.avif" class="d-block w" style="width: 50%; height: 600px; max-width: 100%;" alt="...">
+
             <div class="carousel-caption d-none d-md-block">
               
             </div>
           </div>
-
+            <!--tercera imagen papa-->
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="imagenes/papa3.avif" class="d-block w-100" alt="...">
+            <img src="imagenes/papa3.avif" class="d-block w" style="width: 50%; height: 600px; max-width: 100%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>papa selecta</h5>
               <p>La mejor papa al alcance de la mesa.</p>
             </div>
           </div>
         </div>
+      
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -111,7 +115,7 @@
 
 
 
-      <div id="contacto" class="borde titulo">Contáctenos</div>
+      <h4><div id="contacto" class="borde titulo">Contáctenos</div></h4>
       <!-- <div id="contactenos"class=borde></div> -->
       <section id="contactenos">
         <div class="div-contacto borde"></div>
@@ -122,8 +126,22 @@
           </div>
           
           <div class="div-aba borde">
-            <p class="direccion">Dirección: Corabastos Bogota/p>
-            <p>Teléfonos: 601-3302453</p>
+            <p class="cedes"><h4>sedes</h4></p>
+            <p id="direccion_bogota"> Bogota: corabastos  carrera 80#2-51</p>
+            <p  id="direccion_monteria"> Monteria: bodega monteria km3 monteria</p>
+            <p  id="direccion_barranquilla"> Barranquilla calle 3#5-17</p>
+            
+            <p class="cede principal"><h5>cede principal</h5></p>
+            <p class="direccion Bogota"> Corabastos Bogota</p>
+              <p><h4>contactenos</h4></p>
+              <p id="telefonos">Teléfonos: 601-3302453</p>
+              <p><h4>Horario de atencion</h4></p>
+              <p id="horarios">domingo a domingo de 4am a 5pm</p>
+              <footer class="text-center p-3" style="background-color: #3ea135;">
+                <p class="mb-0">© 2025 Rizomasys. Todos los derechos reservados.</p>
+            </footer>
+            
+
     
           </div>
         </div>
@@ -133,6 +151,8 @@
     </div>
   </body>
 </html>
+
+</center>
 
     
       
